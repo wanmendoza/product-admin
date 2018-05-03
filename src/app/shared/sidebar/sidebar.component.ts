@@ -4,8 +4,8 @@ import { RouteInfo } from "./sidebar.metadata";
 import { Router, ActivatedRoute } from "@angular/router";
 
 declare var $: any;
-
 @Component({
+    // moduleId: module.id,
     selector: 'app-sidebar',
     templateUrl: './sidebar.component.html',
 })
@@ -18,13 +18,10 @@ export class SidebarComponent implements OnInit {
     }
 
     ngOnInit() {
-        $.getScript('./assets/js/app-sidebar.js');
+        $.getScript('./assets/app/js/core/app-menu.js');
+        $.getScript('./assets/app/js/core/app.js');
+       
         this.menuItems = ROUTES.filter(menuItem => menuItem);
     }
 
-    //NGX Wizard - skip url change
-    ngxWizardFunction(path: string) {
-        if (path.indexOf('forms/ngx') !== -1)
-            this.router.navigate(['forms/ngx/wizard'], { skipLocationChange: false });
-    }
 }

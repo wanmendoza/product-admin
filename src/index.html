@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-textdirection="ltr" class="loading">
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Apex - Angular 5 Bootstrap Admin Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="Stack admin is super flexible, powerful, clean &amp; modern responsive Angular 5 bootstrap admin template with unlimited possibilities.">
+  <meta name="keywords" content="admin template, stack admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>Stack - Angular 5+ Bootstrap Admin Template</title>
   <base href="/">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/fonts/feather/style.min.css" rel="stylesheet">
-  <link href="assets/fonts/simple-line-icons/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900'
-    rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/vendor/pace/themes/black/pace-theme-flash.css"/>
+  <link rel="apple-touch-icon" href="assets/app/images/ico/apple-icon-120.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/app/images/ico/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app/vendors/pace/themes/black/pace-theme-flash.css"/>
   <style type="text/css">
     .pace .pace-activity {
       top: 19px;
@@ -26,7 +26,7 @@
       bottom: 0;
       right: 0;
       overflow: hidden;
-      background: rgba(51, 51, 51, 1.00);
+      background-color: #F5F7FA;
       opacity: 0;
       transition: opacity 1s ease-in-out;
       z-index: -1;
@@ -45,7 +45,7 @@
       z-index: 1;
     }
   </style>
-  <script src="assets/vendor/pace/pace.min.js"></script>
+  <script src="assets/app/vendors/pace/pace.min.js"></script>
   <script type="text/javascript">
     (function (window) {
       // Polyfills DOM4 MouseEvent only on IE11
@@ -78,10 +78,10 @@
     })(window);
   </script>
 </head>
-<body>
+<body data-open="click" data-menu="vertical-menu" data-col="" class="vertical-layout vertical-menu  menu-expanded fixed-navbar">
   <app-root></app-root>
   <div class="page-loading">
-    <img src="assets/img/oval.svg" class="loading-icon" />
+    <img src="assets/app/images/oval.svg" class="loading-icon" />
   </div>
 </body>
 </html>

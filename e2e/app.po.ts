@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MatngularPage {
+export class StackPage {
   navigateTo() {
     return browser.get('/');
   }
